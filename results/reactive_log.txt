@@ -1,0 +1,3 @@
+reactive robots=3 done (93 s)
+reactive robots=5 done (245 s)
+reactive robots=8 done (521 s)

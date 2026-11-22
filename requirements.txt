@@ -1,0 +1,5 @@
+# Versions used to produce the published results (Python 3.12.3, Windows 11, Intel x86-64)
+numpy==2.3.4
+scipy==1.16.2
+matplotlib==3.10.7
+pandas==2.3.3

@@ -1,0 +1,3 @@
+robustness robots=3 done (93 s)
+robustness robots=5 done (272 s)
+robustness robots=8 done (545 s)

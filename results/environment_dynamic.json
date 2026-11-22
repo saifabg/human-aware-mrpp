@@ -1,0 +1,47 @@
+{
+  "date_utc": "2026-11-21T21:12:22+00:00",
+  "python": "3.12.3",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+  "machine": "AMD64",
+  "numpy": "2.3.4",
+  "scipy": "1.16.2",
+  "matplotlib": "3.10.7",
+  "pandas": "2.3.3",
+  "config": {
+    "turn_weight": 1.0,
+    "social_weight": 1.0,
+    "sigma": 0.8,
+    "personal_space": 1.0,
+    "human_weight": 1.0,
+    "turn_noise_deg": 10.0,
+    "turn_count_threshold": 0.1,
+    "reserve_halfwidth": 1,
+    "exclusion_window": 2,
+    "cbs_max_expansions": 150,
+    "cbs_time_budget_s": 2.0,
+    "cbs_fallback": "lowest_cost"
+  },
+  "cpu_count": 8,
+  "experiment": "dynamic",
+  "base_seed": 5005,
+  "robots": [
+    3,
+    5,
+    8
+  ],
+  "humans": [
+    4,
+    8,
+    12
+  ],
+  "trials": 30,
+  "horizons": [
+    0,
+    2,
+    4,
+    6,
+    10
+  ],
+  "runtime_s": 6077.3
+}

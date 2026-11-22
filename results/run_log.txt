@@ -1,0 +1,16 @@
+illustrative: [(0, 8, 0, 2.52), (1, 13, 2, 1.0), (2, 12, 6, 0.51)]
+comparison_map1: 80 trials done
+sensitivity: done
+scalability: robots=3 humans=4 done
+scalability: robots=3 humans=8 done
+scalability: robots=3 humans=15 done
+scalability: robots=5 humans=4 done
+scalability: robots=5 humans=8 done
+scalability: robots=5 humans=15 done
+scalability: robots=10 humans=4 done
+scalability: robots=10 humans=8 done
+scalability: robots=10 humans=15 done
+comparison_map2: 50 trials done
+cbs_budget: humans=4 done
+cbs_budget: humans=8 done
+cbs_budget: humans=15 done

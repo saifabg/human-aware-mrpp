@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "human-aware-mrpp: human-aware multi-robot path planning with uncertainty-aware prediction of pedestrian motion"
+version: 1.0.0
+date-released: 2026-11-22
+license: MIT
+authors:
+  - family-names: Abgenah
+    given-names: Saif Allah M.
+    affiliation: Elmergib University
+  - family-names: Aldrawi
+    given-names: Abdusalam
+    affiliation: Elmergib University
+  - family-names: Juma
+    given-names: Hamza Ali
+    affiliation: Elmergib University
+repository-code: "https://github.com/saifabg/human-aware-mrpp"
+# doi: <add the Zenodo DOI>
+preferred-citation:
+  type: article
+  title: "Human-Aware Multi-Robot Path Planning with Uncertainty-Aware Prediction of Pedestrian Motion"
+  authors:
+    - family-names: Abgenah
+      given-names: Saif Allah M.
+    - family-names: Aldrawi
+      given-names: Abdusalam
+    - family-names: Juma
+      given-names: Hamza Ali
+  journal: "IET Cyber-Systems and Robotics (submitted)"
+  year: 2026

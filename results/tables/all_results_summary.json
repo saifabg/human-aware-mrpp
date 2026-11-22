@@ -1,0 +1,2930 @@
+{
+  "illustrative": [
+    {
+      "robot": 0,
+      "priority": 3,
+      "start": 1,
+      "goal": 50,
+      "feasible": 1,
+      "path_len": 8,
+      "turns": 0,
+      "min_human_dist": 2.5179356624028344,
+      "enters_personal_space": 0,
+      "path": "1 12 16 20 24 35 46 50",
+      "method": "human_aware_st"
+    },
+    {
+      "robot": 1,
+      "priority": 2,
+      "start": 10,
+      "goal": 60,
+      "feasible": 1,
+      "path_len": 13,
+      "turns": 2,
+      "min_human_dist": 1.004987562112089,
+      "enters_personal_space": 0,
+      "path": "10 9 8 7 14 18 22 29 40 48 52 56 60",
+      "method": "human_aware_st"
+    },
+    {
+      "robot": 2,
+      "priority": 1,
+      "start": 20,
+      "goal": 70,
+      "feasible": 1,
+      "path_len": 15,
+      "turns": 2,
+      "min_human_dist": 1.5132745950421556,
+      "enters_personal_space": 0,
+      "path": "20 24 35 46 50 54 58 63 64 65 66 67 68 69 70",
+      "method": "human_aware_st"
+    },
+    {
+      "robot": 0,
+      "priority": 3,
+      "start": 1,
+      "goal": 50,
+      "feasible": 1,
+      "path_len": 8,
+      "turns": 0,
+      "min_human_dist": 2.5179356624028344,
+      "enters_personal_space": 0,
+      "path": "1 12 16 20 24 35 46 50",
+      "method": "human_aware"
+    },
+    {
+      "robot": 1,
+      "priority": 2,
+      "start": 10,
+      "goal": 60,
+      "feasible": 1,
+      "path_len": 13,
+      "turns": 2,
+      "min_human_dist": 1.004987562112089,
+      "enters_personal_space": 0,
+      "path": "10 9 8 7 14 18 22 29 40 48 52 56 60",
+      "method": "human_aware"
+    },
+    {
+      "robot": 2,
+      "priority": 1,
+      "start": 20,
+      "goal": 70,
+      "feasible": 1,
+      "path_len": 12,
+      "turns": 6,
+      "min_human_dist": 0.5099019513592784,
+      "enters_personal_space": 1,
+      "path": "20 25 37 38 47 52 56 59 67 68 69 70",
+      "method": "human_aware"
+    }
+  ],
+  "comparison_map1": [
+    {
+      "method": "classic",
+      "label": "Classic Dijkstra",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.104166666666667,
+      "path_len_ci": [
+        6.720833333333333,
+        7.508333333333334
+      ],
+      "turns": 1.6333333333333333,
+      "turns_ci": [
+        1.4748958333333335,
+        1.8083333333333333
+      ],
+      "min_human_dist": 1.2289670668467474,
+      "min_human_dist_ci": [
+        1.1047751952055014,
+        1.3646370384789965
+      ],
+      "collisions_per_trial": 0.175,
+      "collisions_per_trial_ci": [
+        0.0875,
+        0.275
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 16.25,
+      "plan_ms": 0.4610637497535208,
+      "plan_ms_median": 0.43885000195587054,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 53.75
+    },
+    {
+      "method": "hard_exclusion",
+      "label": "Hard exclusion (v1 reservations)",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 8.403846153846153,
+      "path_len_ci": [
+        7.762172501966955,
+        9.111181434599155
+      ],
+      "turns": 2.6858974358974357,
+      "turns_ci": [
+        2.3353658536585367,
+        3.073358108108108
+      ],
+      "min_human_dist": 1.848894475651806,
+      "min_human_dist_ci": [
+        1.719348523110474,
+        1.9838625835253487
+      ],
+      "collisions_per_trial": 0.0375,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0875
+      ],
+      "infeasible_pct": 35.0,
+      "infeasible_pct_ci": [
+        29.166666666666668,
+        40.833333333333336
+      ],
+      "trials_with_collision_pct": 3.75,
+      "plan_ms": 0.41813125062617473,
+      "plan_ms_median": 0.3982499983976595,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 0.0
+    },
+    {
+      "method": "human_aware",
+      "label": "Human-aware (v1 reservations)",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.888412017167382,
+      "path_len_ci": [
+        7.439035794602699,
+        8.375281652360513
+      ],
+      "turns": 2.3175965665236054,
+      "turns_ci": [
+        2.0854700854700856,
+        2.5598684210526312
+      ],
+      "min_human_dist": 1.330488192789988,
+      "min_human_dist_ci": [
+        1.2056425719492023,
+        1.4609131178540147
+      ],
+      "collisions_per_trial": 0.025,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0625
+      ],
+      "infeasible_pct": 2.9166666666666665,
+      "infeasible_pct_ci": [
+        1.25,
+        5.0
+      ],
+      "trials_with_collision_pct": 2.5,
+      "plan_ms": 2.6419162499223603,
+      "plan_ms_median": 2.514249994419515,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 46.3519313304721
+    },
+    {
+      "method": "hard_exclusion_st",
+      "label": "Hard exclusion (space-time)",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 8.325301204819278,
+      "path_len_ci": [
+        7.733235294117647,
+        8.962615131578946
+      ],
+      "turns": 2.4819277108433737,
+      "turns_ci": [
+        2.1927422263905925,
+        2.8170078166401695
+      ],
+      "min_human_dist": 1.866494306362963,
+      "min_human_dist_ci": [
+        1.7404268635070286,
+        1.9988033529106881
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 30.833333333333336,
+      "infeasible_pct_ci": [
+        25.0,
+        36.25
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 11.04419625025912,
+      "plan_ms_median": 8.60820000525564,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 0.0
+    },
+    {
+      "method": "unaware_st",
+      "label": "No social cost (space-time)",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.170833333333333,
+      "path_len_ci": [
+        6.775,
+        7.583333333333333
+      ],
+      "turns": 1.7041666666666666,
+      "turns_ci": [
+        1.5291666666666666,
+        1.8916666666666666
+      ],
+      "min_human_dist": 1.236744155957798,
+      "min_human_dist_ci": [
+        1.1139182020821072,
+        1.3740703001501666
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 5.243792499277333,
+      "plan_ms_median": 4.66374999814434,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 53.333333333333336
+    },
+    {
+      "method": "human_aware_st",
+      "label": "Human-aware (space-time, proposed)",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.466666666666667,
+      "path_len_ci": [
+        7.016666666666667,
+        7.9375
+      ],
+      "turns": 1.8791666666666667,
+      "turns_ci": [
+        1.6916666666666667,
+        2.0708333333333333
+      ],
+      "min_human_dist": 1.388050682770723,
+      "min_human_dist_ci": [
+        1.269967815991934,
+        1.515819235177496
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 9.087212499980524,
+      "plan_ms_median": 7.946950005134568,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 42.5
+    },
+    {
+      "method": "cbs",
+      "label": "CBS + social cost",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.329166666666667,
+      "path_len_ci": [
+        6.895833333333333,
+        7.7875
+      ],
+      "turns": 1.8625,
+      "turns_ci": [
+        1.6875,
+        2.0541666666666667
+      ],
+      "min_human_dist": 1.3879364692706226,
+      "min_human_dist_ci": [
+        1.2718542715510295,
+        1.51286415723675
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 11.874427499787998,
+      "plan_ms_median": 9.243900000001304,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 42.5
+    },
+    {
+      "method": "pbs",
+      "label": "PBS + social cost",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.329166666666667,
+      "path_len_ci": [
+        6.895833333333333,
+        7.7875
+      ],
+      "turns": 1.8625,
+      "turns_ci": [
+        1.6875,
+        2.0541666666666667
+      ],
+      "min_human_dist": 1.3879364692706226,
+      "min_human_dist_ci": [
+        1.2718542715510295,
+        1.51286415723675
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 10.232044999065693,
+      "plan_ms_median": 8.714399999007583,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 42.5
+    },
+    {
+      "method": "ecbs",
+      "label": "ECBS(1.5) + social cost",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.35,
+      "path_len_ci": [
+        6.916666666666667,
+        7.820833333333334
+      ],
+      "turns": 1.8666666666666667,
+      "turns_ci": [
+        1.675,
+        2.066770833333333
+      ],
+      "min_human_dist": 1.3819696120439204,
+      "min_human_dist_ci": [
+        1.2648303833018313,
+        1.5099645542531976
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 4.862007499650645,
+      "plan_ms_median": 4.281699999410193,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 43.333333333333336
+    },
+    {
+      "method": "pibt",
+      "label": "PIBT + social cost",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.4125,
+      "path_len_ci": [
+        6.974895833333333,
+        7.875
+      ],
+      "turns": 2.3,
+      "turns_ci": [
+        2.0875,
+        2.5458333333333334
+      ],
+      "min_human_dist": 1.3927560632631983,
+      "min_human_dist_ci": [
+        1.270438830549318,
+        1.5192808306644896
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 3.996876249766501,
+      "plan_ms_median": 3.462150001723785,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 42.083333333333336
+    },
+    {
+      "method": "lacam",
+      "label": "LaCAM + social cost",
+      "n_trials": 80,
+      "n_robot_instances": 240,
+      "path_len": 7.408333333333333,
+      "path_len_ci": [
+        6.974895833333333,
+        7.875
+      ],
+      "turns": 2.2916666666666665,
+      "turns_ci": [
+        2.0791666666666666,
+        2.533333333333333
+      ],
+      "min_human_dist": 1.3927560632631983,
+      "min_human_dist_ci": [
+        1.270438830549318,
+        1.5192808306644896
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 3.7858175008295802,
+      "plan_ms_median": 3.5150999974575825,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 42.083333333333336
+    }
+  ],
+  "comparison_map1_significance": {
+    "human_aware_st__vs__classic": {
+      "mean_path_len": {
+        "p": 4.2630857775393926e-06,
+        "n": 80,
+        "p_holm": 4.6893943552933316e-05
+      },
+      "mean_turns": {
+        "p": 0.002753477987904833,
+        "n": 80,
+        "p_holm": 0.013767389939524165
+      },
+      "mean_min_human_dist": {
+        "p": 7.738385469633612e-09,
+        "n": 80,
+        "p_holm": 5.416869828743529e-08
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 0.000244140625,
+        "discordant": [
+          0,
+          13
+        ],
+        "p_holm": 0.002685546875
+      }
+    },
+    "human_aware_st__vs__hard_exclusion_st": {
+      "mean_path_len": {
+        "p": 0.0004693619657246549,
+        "n": 77,
+        "p_holm": 0.003285533760072584
+      },
+      "mean_turns": {
+        "p": 8.505245406385003e-06,
+        "n": 77,
+        "p_holm": 6.804196325108002e-05
+      },
+      "mean_min_human_dist": {
+        "p": 1.5726235229485937e-11,
+        "n": 77,
+        "p_holm": 1.5726235229485938e-10
+      },
+      "any_infeasible": {
+        "p": 5.551115123125783e-17,
+        "discordant": [
+          0,
+          55
+        ],
+        "p_holm": 6.106226635438361e-16
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__cbs": {
+      "mean_path_len": {
+        "p": 0.013803064862365573,
+        "n": 80,
+        "p_holm": 0.06901532431182787
+      },
+      "mean_turns": {
+        "p": 0.7890635999892657,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "mean_min_human_dist": {
+        "p": 0.7353166906373405,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__pbs": {
+      "mean_path_len": {
+        "p": 0.013803064862365573,
+        "n": 80,
+        "p_holm": 0.06901532431182787
+      },
+      "mean_turns": {
+        "p": 0.7890635999892657,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "mean_min_human_dist": {
+        "p": 0.7353166906373405,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__ecbs": {
+      "mean_path_len": {
+        "p": 0.027281171477617997,
+        "n": 80,
+        "p_holm": 0.081843514432854
+      },
+      "mean_turns": {
+        "p": 0.6709392540844913,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "mean_min_human_dist": {
+        "p": 0.22491588401596185,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__pibt": {
+      "mean_path_len": {
+        "p": 0.19211152794200148,
+        "n": 80,
+        "p_holm": 0.3227273855358179
+      },
+      "mean_turns": {
+        "p": 3.292354579003611e-07,
+        "n": 80,
+        "p_holm": 3.6215900369039722e-06
+      },
+      "mean_min_human_dist": {
+        "p": 0.882352226991577,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__lacam": {
+      "mean_path_len": {
+        "p": 0.16136369276790896,
+        "n": 80,
+        "p_holm": 0.3227273855358179
+      },
+      "mean_turns": {
+        "p": 4.669254555683667e-07,
+        "n": 80,
+        "p_holm": 4.669254555683667e-06
+      },
+      "mean_min_human_dist": {
+        "p": 0.882352226991577,
+        "n": 80,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "cbs__vs__hard_exclusion_st": {
+      "mean_path_len": {
+        "p": 8.009040206345761e-05,
+        "n": 77,
+        "p_holm": 0.0007208136185711185
+      },
+      "mean_turns": {
+        "p": 9.280569448937968e-06,
+        "n": 77,
+        "p_holm": 6.804196325108002e-05
+      },
+      "mean_min_human_dist": {
+        "p": 8.349869072734033e-12,
+        "n": 77,
+        "p_holm": 9.184855980007436e-11
+      },
+      "any_infeasible": {
+        "p": 5.551115123125783e-17,
+        "discordant": [
+          0,
+          55
+        ],
+        "p_holm": 6.106226635438361e-16
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "cbs__vs__classic": {
+      "mean_path_len": {
+        "p": 2.77071234557739e-05,
+        "n": 80,
+        "p_holm": 0.000277071234557739
+      },
+      "mean_turns": {
+        "p": 0.0010704323774644408,
+        "n": 80,
+        "p_holm": 0.006422594264786645
+      },
+      "mean_min_human_dist": {
+        "p": 5.542058507605285e-09,
+        "n": 80,
+        "p_holm": 4.433646806084228e-08
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 0.000244140625,
+        "discordant": [
+          0,
+          13
+        ],
+        "p_holm": 0.002685546875
+      }
+    },
+    "human_aware_st__vs__human_aware": {
+      "mean_path_len": {
+        "p": 0.0017917140146018603,
+        "n": 80,
+        "p_holm": 0.010750284087611162
+      },
+      "mean_turns": {
+        "p": 1.345343514735256e-06,
+        "n": 80,
+        "p_holm": 1.2108091632617304e-05
+      },
+      "mean_min_human_dist": {
+        "p": 0.01879260906824234,
+        "n": 80,
+        "p_holm": 0.11275565440945404
+      },
+      "any_infeasible": {
+        "p": 0.015625,
+        "discordant": [
+          0,
+          7
+        ],
+        "p_holm": 0.140625
+      },
+      "any_collision": {
+        "p": 0.5,
+        "discordant": [
+          0,
+          2
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__unaware_st": {
+      "mean_path_len": {
+        "p": 0.00039284846993462984,
+        "n": 80,
+        "p_holm": 0.0031427877594770387
+      },
+      "mean_turns": {
+        "p": 0.04956315234687923,
+        "n": 80,
+        "p_holm": 0.19825260938751693
+      },
+      "mean_min_human_dist": {
+        "p": 4.021325745880773e-09,
+        "n": 80,
+        "p_holm": 3.619193171292695e-08
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    }
+  },
+  "comparison_map2": [
+    {
+      "method": "classic",
+      "label": "Classic Dijkstra",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.08,
+      "path_len_ci": [
+        11.259833333333333,
+        12.926666666666666
+      ],
+      "turns": 2.6,
+      "turns_ci": [
+        2.3466666666666667,
+        2.8466666666666667
+      ],
+      "min_human_dist": 1.644640330571108,
+      "min_human_dist_ci": [
+        1.4113650269568718,
+        1.8903858062963363
+      ],
+      "collisions_per_trial": 0.26,
+      "collisions_per_trial_ci": [
+        0.14,
+        0.38
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 26.0,
+      "plan_ms": 0.6147980003152043,
+      "plan_ms_median": 0.6147000021883287,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 38.0
+    },
+    {
+      "method": "hard_exclusion",
+      "label": "Hard exclusion (v1 reservations)",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 14.184873949579831,
+      "path_len_ci": [
+        12.814995833043962,
+        15.677904818602045
+      ],
+      "turns": 3.689075630252101,
+      "turns_ci": [
+        3.2287238509696135,
+        4.133941701680672
+      ],
+      "min_human_dist": 2.1804260072699337,
+      "min_human_dist_ci": [
+        1.9567588407927894,
+        2.425242718563601
+      ],
+      "collisions_per_trial": 0.04,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.1
+      ],
+      "infeasible_pct": 20.666666666666668,
+      "infeasible_pct_ci": [
+        14.000000000000002,
+        27.333333333333332
+      ],
+      "trials_with_collision_pct": 4.0,
+      "plan_ms": 0.8266199985519052,
+      "plan_ms_median": 0.8294500075862743,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 0.0
+    },
+    {
+      "method": "human_aware",
+      "label": "Human-aware (v1 reservations)",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 13.305555555555555,
+      "path_len_ci": [
+        12.244670846394985,
+        14.386447557471264
+      ],
+      "turns": 3.326388888888889,
+      "turns_ci": [
+        2.9310344827586206,
+        3.673672241784037
+      ],
+      "min_human_dist": 1.7762021600589013,
+      "min_human_dist_ci": [
+        1.5548673036221885,
+        2.011872725682681
+      ],
+      "collisions_per_trial": 0.02,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.06
+      ],
+      "infeasible_pct": 4.0,
+      "infeasible_pct_ci": [
+        1.3333333333333335,
+        7.333333333333333
+      ],
+      "trials_with_collision_pct": 2.0,
+      "plan_ms": 3.3469740010332316,
+      "plan_ms_median": 3.4014999982900918,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 30.555555555555557
+    },
+    {
+      "method": "hard_exclusion_st",
+      "label": "Hard exclusion (space-time)",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 13.304,
+      "path_len_ci": [
+        12.118087167814961,
+        14.600126050420167
+      ],
+      "turns": 3.256,
+      "turns_ci": [
+        2.9444333333333335,
+        3.5600384615384613
+      ],
+      "min_human_dist": 2.1950081933793126,
+      "min_human_dist_ci": [
+        1.9854041002304461,
+        2.4219726937229855
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 16.666666666666664,
+      "infeasible_pct_ci": [
+        10.0,
+        23.333333333333332
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 132.17736400023568,
+      "plan_ms_median": 15.792000005603768,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 0.0
+    },
+    {
+      "method": "unaware_st",
+      "label": "No social cost (space-time)",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.366666666666667,
+      "path_len_ci": [
+        11.5265,
+        13.246833333333331
+      ],
+      "turns": 2.6733333333333333,
+      "turns_ci": [
+        2.42,
+        2.9133333333333336
+      ],
+      "min_human_dist": 1.6809401192904965,
+      "min_human_dist_ci": [
+        1.4549567413677376,
+        1.9226840303157562
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 11.120025998679921,
+      "plan_ms_median": 10.289250007190276,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 36.0
+    },
+    {
+      "method": "human_aware_st",
+      "label": "Human-aware (space-time, proposed)",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.426666666666666,
+      "path_len_ci": [
+        11.599833333333333,
+        13.346666666666666
+      ],
+      "turns": 2.98,
+      "turns_ci": [
+        2.6864999999999997,
+        3.2733333333333334
+      ],
+      "min_human_dist": 1.8245870588396318,
+      "min_human_dist_ci": [
+        1.6088156261667577,
+        2.0456305261058043
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 16.101960000232793,
+      "plan_ms_median": 15.060850004374515,
+      "timeout_pct": NaN,
+      "enters_personal_space_pct": 28.000000000000004
+    },
+    {
+      "method": "cbs",
+      "label": "CBS + social cost",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.28,
+      "path_len_ci": [
+        11.459833333333334,
+        13.14
+      ],
+      "turns": 2.953333333333333,
+      "turns_ci": [
+        2.68,
+        3.2466666666666666
+      ],
+      "min_human_dist": 1.8208592949739213,
+      "min_human_dist_ci": [
+        1.6037110980333098,
+        2.0417889206948083
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 41.97346999979345,
+      "plan_ms_median": 18.704599999182392,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 28.000000000000004
+    },
+    {
+      "method": "pbs",
+      "label": "PBS + social cost",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.246666666666666,
+      "path_len_ci": [
+        11.439499999999999,
+        13.100166666666665
+      ],
+      "turns": 2.9133333333333336,
+      "turns_ci": [
+        2.6466666666666665,
+        3.18
+      ],
+      "min_human_dist": 1.8128086441398577,
+      "min_human_dist_ci": [
+        1.5980828904832733,
+        2.0372100552824923
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 21.55640199984191,
+      "plan_ms_median": 18.209200003184378,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 28.000000000000004
+    },
+    {
+      "method": "ecbs",
+      "label": "ECBS(1.5) + social cost",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.286666666666667,
+      "path_len_ci": [
+        11.466333333333333,
+        13.1535
+      ],
+      "turns": 2.96,
+      "turns_ci": [
+        2.68,
+        3.2533333333333334
+      ],
+      "min_human_dist": 1.8115842025653948,
+      "min_human_dist_ci": [
+        1.6001823971039189,
+        2.032658956519012
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 6.578975999727845,
+      "plan_ms_median": 6.094550008128863,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 28.666666666666668
+    },
+    {
+      "method": "pibt",
+      "label": "PIBT + social cost",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.595890410958905,
+      "path_len_ci": [
+        11.671006108848575,
+        13.568493150684931
+      ],
+      "turns": 3.4657534246575343,
+      "turns_ci": [
+        3.095890410958904,
+        3.831081081081081
+      ],
+      "min_human_dist": 1.7964631679303023,
+      "min_human_dist_ci": [
+        1.5767168793594297,
+        2.0222523725946693
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 2.666666666666667,
+      "infeasible_pct_ci": [
+        0.0,
+        6.666666666666667
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 5.016256001254078,
+      "plan_ms_median": 4.703299993707333,
+      "timeout_pct": 4.0,
+      "enters_personal_space_pct": 28.08219178082192
+    },
+    {
+      "method": "lacam",
+      "label": "LaCAM + social cost",
+      "n_trials": 50,
+      "n_robot_instances": 150,
+      "path_len": 12.826666666666666,
+      "path_len_ci": [
+        11.819833333333333,
+        13.920166666666665
+      ],
+      "turns": 3.7133333333333334,
+      "turns_ci": [
+        3.2464999999999997,
+        4.226666666666667
+      ],
+      "min_human_dist": 1.7879290392227938,
+      "min_human_dist_ci": [
+        1.5728187430633582,
+        2.009896376312812
+      ],
+      "collisions_per_trial": 0.0,
+      "collisions_per_trial_ci": [
+        0.0,
+        0.0
+      ],
+      "infeasible_pct": 0.0,
+      "infeasible_pct_ci": [
+        0.0,
+        0.0
+      ],
+      "trials_with_collision_pct": 0.0,
+      "plan_ms": 5.154751999943983,
+      "plan_ms_median": 4.877300001680851,
+      "timeout_pct": 0.0,
+      "enters_personal_space_pct": 28.000000000000004
+    }
+  ],
+  "comparison_map2_significance": {
+    "human_aware_st__vs__classic": {
+      "mean_path_len": {
+        "p": 0.0012784549041610703,
+        "n": 50,
+        "p_holm": 0.012784549041610704
+      },
+      "mean_turns": {
+        "p": 0.00046867219705421886,
+        "n": 50,
+        "p_holm": 0.00421804977348797
+      },
+      "mean_min_human_dist": {
+        "p": 3.527453036695769e-05,
+        "n": 50,
+        "p_holm": 0.00034052567232805374
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 0.000244140625,
+        "discordant": [
+          0,
+          13
+        ],
+        "p_holm": 0.002685546875
+      }
+    },
+    "human_aware_st__vs__hard_exclusion_st": {
+      "mean_path_len": {
+        "p": 0.15018786261998007,
+        "n": 49,
+        "p_holm": 0.6890976555797168
+      },
+      "mean_turns": {
+        "p": 0.12465699792882073,
+        "n": 49,
+        "p_holm": 0.49862799171528294
+      },
+      "mean_min_human_dist": {
+        "p": 3.4052567232805375e-05,
+        "n": 49,
+        "p_holm": 0.00034052567232805374
+      },
+      "any_infeasible": {
+        "p": 1.9073486328125e-06,
+        "discordant": [
+          0,
+          20
+        ],
+        "p_holm": 2.09808349609375e-05
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__cbs": {
+      "mean_path_len": {
+        "p": 0.07414989773822231,
+        "n": 50,
+        "p_holm": 0.5190492841675561
+      },
+      "mean_turns": {
+        "p": 0.49819405658410876,
+        "n": 50,
+        "p_holm": 0.9963881131682175
+      },
+      "mean_min_human_dist": {
+        "p": 0.4652088184521418,
+        "n": 50,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__pbs": {
+      "mean_path_len": {
+        "p": 0.03389485352468927,
+        "n": 50,
+        "p_holm": 0.27115882819751413
+      },
+      "mean_turns": {
+        "p": 0.23672357063785732,
+        "n": 50,
+        "p_holm": 0.710170711913572
+      },
+      "mean_min_human_dist": {
+        "p": 0.043114446783075355,
+        "n": 50,
+        "p_holm": 0.25868668069845213
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__ecbs": {
+      "mean_path_len": {
+        "p": 0.11484960926328613,
+        "n": 50,
+        "p_holm": 0.6890976555797168
+      },
+      "mean_turns": {
+        "p": 0.7127018566581784,
+        "n": 50,
+        "p_holm": 0.9963881131682175
+      },
+      "mean_min_human_dist": {
+        "p": 0.10880943004054569,
+        "n": 50,
+        "p_holm": 0.5440471502027284
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__pibt": {
+      "mean_path_len": {
+        "p": 0.16408532092777584,
+        "n": 50,
+        "p_holm": 0.6890976555797168
+      },
+      "mean_turns": {
+        "p": 5.7765968005696705e-05,
+        "n": 50,
+        "p_holm": 0.000577659680056967
+      },
+      "mean_min_human_dist": {
+        "p": 0.6050949464540121,
+        "n": 50,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 0.5,
+        "discordant": [
+          0,
+          2
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__lacam": {
+      "mean_path_len": {
+        "p": 0.14508411315401934,
+        "n": 50,
+        "p_holm": 0.6890976555797168
+      },
+      "mean_turns": {
+        "p": 3.180867922277482e-05,
+        "n": 50,
+        "p_holm": 0.00034989547145052296
+      },
+      "mean_min_human_dist": {
+        "p": 0.27753025059514513,
+        "n": 50,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "cbs__vs__hard_exclusion_st": {
+      "mean_path_len": {
+        "p": 0.13283912512392132,
+        "n": 49,
+        "p_holm": 0.6890976555797168
+      },
+      "mean_turns": {
+        "p": 0.0465809477083852,
+        "n": 49,
+        "p_holm": 0.232904738541926
+      },
+      "mean_min_human_dist": {
+        "p": 2.517141688051119e-05,
+        "n": 49,
+        "p_holm": 0.0002768855856856231
+      },
+      "any_infeasible": {
+        "p": 1.9073486328125e-06,
+        "discordant": [
+          0,
+          20
+        ],
+        "p_holm": 2.09808349609375e-05
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "cbs__vs__classic": {
+      "mean_path_len": {
+        "p": 0.012471721605138484,
+        "n": 50,
+        "p_holm": 0.11224549444624636
+      },
+      "mean_turns": {
+        "p": 0.0012194716959157122,
+        "n": 50,
+        "p_holm": 0.009295763384466254
+      },
+      "mean_min_human_dist": {
+        "p": 6.334248366623973e-05,
+        "n": 50,
+        "p_holm": 0.0005067398693299178
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 0.000244140625,
+        "discordant": [
+          0,
+          13
+        ],
+        "p_holm": 0.002685546875
+      }
+    },
+    "human_aware_st__vs__human_aware": {
+      "mean_path_len": {
+        "p": 0.0006848595218994913,
+        "n": 50,
+        "p_holm": 0.007533454740894404
+      },
+      "mean_turns": {
+        "p": 0.0041769964672522765,
+        "n": 50,
+        "p_holm": 0.025061978803513657
+      },
+      "mean_min_human_dist": {
+        "p": 0.4140400034242331,
+        "n": 50,
+        "p_holm": 1.0
+      },
+      "any_infeasible": {
+        "p": 0.03125,
+        "discordant": [
+          0,
+          6
+        ],
+        "p_holm": 0.28125
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          1
+        ],
+        "p_holm": 1.0
+      }
+    },
+    "human_aware_st__vs__unaware_st": {
+      "mean_path_len": {
+        "p": 0.3169673356540008,
+        "n": 50,
+        "p_holm": 0.6890976555797168
+      },
+      "mean_turns": {
+        "p": 0.0011619704230582818,
+        "n": 50,
+        "p_holm": 0.009295763384466254
+      },
+      "mean_min_human_dist": {
+        "p": 8.857457687863547e-05,
+        "n": 50,
+        "p_holm": 0.0006200220381504483
+      },
+      "any_infeasible": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      },
+      "any_collision": {
+        "p": 1.0,
+        "discordant": [
+          0,
+          0
+        ],
+        "p_holm": 1.0
+      }
+    }
+  },
+  "sensitivity": {
+    "human_aware_st": {
+      "weights": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ],
+      "path_len": [
+        7.083333333333333,
+        7.1,
+        7.116666666666666,
+        7.166666666666667,
+        8.05,
+        8.483333333333333
+      ],
+      "min_dist": [
+        1.2528401510779361,
+        1.29887994019807,
+        1.305385410266661,
+        1.3244363416858438,
+        1.418061936005951,
+        1.4460508386175401
+      ],
+      "enter_pct": [
+        45.0,
+        41.66666666666667,
+        41.66666666666667,
+        40.0,
+        31.666666666666664,
+        30.0
+      ]
+    },
+    "human_aware": {
+      "weights": [
+        0.0,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ],
+      "path_len": [
+        7.6440677966101696,
+        7.491525423728813,
+        7.372881355932203,
+        7.508474576271187,
+        7.983050847457627,
+        8.983050847457626
+      ],
+      "min_dist": [
+        1.2295335864287598,
+        1.2321243462373848,
+        1.2494044339485508,
+        1.2751040034889103,
+        1.3314882012803362,
+        1.3848505552613892
+      ],
+      "enter_pct": [
+        44.06779661016949,
+        45.76271186440678,
+        45.76271186440678,
+        44.06779661016949,
+        38.983050847457626,
+        37.28813559322034
+      ]
+    }
+  },
+  "scalability": [
+    {
+      "method": "classic",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 0.3926000019419007,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 2,
+      "trials_with_collision": 2,
+      "min_human_dist": 1.275630656105136,
+      "path_len": 6.633333333333334,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 0.45710999984294176,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 1,
+      "trials_with_collision": 1,
+      "min_human_dist": 0.7555827252170425,
+      "path_len": 7.633333333333334,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 0.49224000104004517,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 3,
+      "trials_with_collision": 3,
+      "min_human_dist": 0.49217800002248463,
+      "path_len": 7.466666666666667,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 0.7612799963681027,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 12,
+      "trials_with_collision": 7,
+      "min_human_dist": 1.1082337021664763,
+      "path_len": 7.74,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 0.849779999407474,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 7,
+      "trials_with_collision": 5,
+      "min_human_dist": 0.7386552695652254,
+      "path_len": 7.74,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 0.8004900009837002,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 9,
+      "trials_with_collision": 6,
+      "min_human_dist": 0.5131273594280251,
+      "path_len": 8.0,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 1.4195499985362403,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 41,
+      "trials_with_collision": 10,
+      "min_human_dist": 1.2493399548344906,
+      "path_len": 7.21,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 1.354339998215437,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 38,
+      "trials_with_collision": 10,
+      "min_human_dist": 0.8080349845920709,
+      "path_len": 6.95,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "classic",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 1.7442499971366487,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 42,
+      "trials_with_collision": 10,
+      "min_human_dist": 0.44302024754859437,
+      "path_len": 7.2,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 0.4380099999252707,
+      "infeasible_pct": 30.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.7429187161741628,
+      "path_len": 7.285714285714286,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 0.3717199986567721,
+      "infeasible_pct": 63.333333333333336,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.443499533965098,
+      "path_len": 10.636363636363637,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 0.22070000122766942,
+      "infeasible_pct": 90.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.1713116917540078,
+      "path_len": 7.0,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 0.6695600008242764,
+      "infeasible_pct": 40.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.5462301567787493,
+      "path_len": 10.233333333333333,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 0.4387199995107949,
+      "infeasible_pct": 70.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.6457856192806766,
+      "path_len": 9.933333333333334,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 0.243419996695593,
+      "infeasible_pct": 84.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.518565261181051,
+      "path_len": 5.25,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 0.9626100028981455,
+      "infeasible_pct": 55.0,
+      "collisions_total_10_trials": 2,
+      "trials_with_collision": 1,
+      "min_human_dist": 1.834034553507315,
+      "path_len": 9.511111111111111,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 0.5223100000876002,
+      "infeasible_pct": 68.0,
+      "collisions_total_10_trials": 1,
+      "trials_with_collision": 1,
+      "min_human_dist": 1.6078190001421735,
+      "path_len": 6.0,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 0.4069900023750961,
+      "infeasible_pct": 93.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.4565181031530219,
+      "path_len": 5.428571428571429,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 2.1491800027433783,
+      "infeasible_pct": 3.3333333333333335,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.424438921444669,
+      "path_len": 7.241379310344827,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 4.222049999225419,
+      "infeasible_pct": 3.3333333333333335,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.7445097871282216,
+      "path_len": 8.448275862068966,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 7.2886699985247105,
+      "infeasible_pct": 3.3333333333333335,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5036098464650921,
+      "path_len": 8.0,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 4.586439997365233,
+      "infeasible_pct": 6.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.1338112799733087,
+      "path_len": 9.361702127659575,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 7.1139299994683824,
+      "infeasible_pct": 6.0,
+      "collisions_total_10_trials": 2,
+      "trials_with_collision": 2,
+      "min_human_dist": 0.7301166667878213,
+      "path_len": 8.893617021276595,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 12.242349998268764,
+      "infeasible_pct": 6.0,
+      "collisions_total_10_trials": 1,
+      "trials_with_collision": 1,
+      "min_human_dist": 0.5656133168406318,
+      "path_len": 9.553191489361701,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 5.2825099977781065,
+      "infeasible_pct": 27.0,
+      "collisions_total_10_trials": 1,
+      "trials_with_collision": 1,
+      "min_human_dist": 1.2572456404339103,
+      "path_len": 8.780821917808218,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 8.571729999675881,
+      "infeasible_pct": 26.0,
+      "collisions_total_10_trials": 5,
+      "trials_with_collision": 3,
+      "min_human_dist": 0.8172608139903024,
+      "path_len": 8.621621621621621,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 15.53637000033632,
+      "infeasible_pct": 26.0,
+      "collisions_total_10_trials": 3,
+      "trials_with_collision": 2,
+      "min_human_dist": 0.46888477812417884,
+      "path_len": 9.243243243243244,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 13.834640002460219,
+      "infeasible_pct": 20.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.7274253534559143,
+      "path_len": 8.291666666666666,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 100.47664000012446,
+      "infeasible_pct": 56.666666666666664,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.4265957756939325,
+      "path_len": 10.615384615384615,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 9.119039999495726,
+      "infeasible_pct": 90.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.1713116917540078,
+      "path_len": 7.0,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 38.01561000145739,
+      "infeasible_pct": 22.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.529232912339976,
+      "path_len": 9.179487179487179,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 82.19621000171173,
+      "infeasible_pct": 66.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.6259173243586396,
+      "path_len": 10.882352941176471,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 32.33648000168614,
+      "infeasible_pct": 84.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.518565261181051,
+      "path_len": 5.25,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 152.1964699990349,
+      "infeasible_pct": 29.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.821741946146922,
+      "path_len": 10.32394366197183,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 104.71167000068817,
+      "infeasible_pct": 61.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.5268234878765976,
+      "path_len": 7.769230769230769,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "hard_exclusion_st",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 121.6460299983737,
+      "infeasible_pct": 93.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.4565181031530219,
+      "path_len": 5.428571428571429,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 3.567019999900367,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.2924137579621635,
+      "path_len": 6.9,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 5.082889999903273,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.7555827252170425,
+      "path_len": 7.666666666666667,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 5.523830000311136,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5020744924619295,
+      "path_len": 7.5,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 9.835920001205523,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.1058708018406427,
+      "path_len": 8.26,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 9.378470000228845,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.7173297760332765,
+      "path_len": 7.92,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 9.676129999570549,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5171485913282239,
+      "path_len": 8.16,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 24.04306000098586,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.223468990387258,
+      "path_len": 7.95,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 26.675260002957657,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8086911659317687,
+      "path_len": 7.43,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "unaware_st",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 17.458099997020327,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.4338123724771673,
+      "path_len": 8.08,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 7.5909400038653985,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.410645729175385,
+      "path_len": 7.166666666666667,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 12.759570000343956,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.9372719524959784,
+      "path_len": 8.133333333333333,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 18.194880003284197,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5290179193886279,
+      "path_len": 7.833333333333333,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 14.130149998527486,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.261043437694374,
+      "path_len": 8.28,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 17.947739995724987,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.846588736818559,
+      "path_len": 8.48,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 25.473269999201875,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.6538872354684747,
+      "path_len": 8.68,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 31.59631000162335,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.3728411533214027,
+      "path_len": 8.1,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 37.140080000972375,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8537773538212778,
+      "path_len": 7.51,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "human_aware_st",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 34.786379999422934,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5320652934594428,
+      "path_len": 8.29,
+      "cbs_timeout_pct": NaN
+    },
+    {
+      "method": "cbs",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 13.797539999359287,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.3938626273183574,
+      "path_len": 6.966666666666667,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "cbs",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 15.048860001843423,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.9372719524959784,
+      "path_len": 8.133333333333333,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "cbs",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 31.864409998524934,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5413658372611413,
+      "path_len": 8.166666666666666,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "cbs",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 120.88495000061812,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.2634063380202076,
+      "path_len": 8.1,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "cbs",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 141.32143999886466,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 3,
+      "trials_with_collision": 1,
+      "min_human_dist": 0.844676262865104,
+      "path_len": 7.98,
+      "cbs_timeout_pct": 10.0
+    },
+    {
+      "method": "cbs",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 62.39849999983562,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.6460934854499227,
+      "path_len": 8.54,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "cbs",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 646.4282099987031,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 28,
+      "trials_with_collision": 7,
+      "min_human_dist": 1.4357943536734035,
+      "path_len": 7.44,
+      "cbs_timeout_pct": 70.0
+    },
+    {
+      "method": "cbs",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 690.3096099980758,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 24,
+      "trials_with_collision": 4,
+      "min_human_dist": 0.8743072889485584,
+      "path_len": 7.22,
+      "cbs_timeout_pct": 40.0
+    },
+    {
+      "method": "cbs",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 698.9870600009453,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 36,
+      "trials_with_collision": 6,
+      "min_human_dist": 0.5335606392797774,
+      "path_len": 7.88,
+      "cbs_timeout_pct": 60.0
+    },
+    {
+      "method": "pbs",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 9.644379999372177,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.410645729175385,
+      "path_len": 7.166666666666667,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 14.336260003619827,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.9372719524959784,
+      "path_len": 8.133333333333333,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 19.83784000185551,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5413658372611413,
+      "path_len": 8.166666666666666,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 27.42139999754727,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.278072125675609,
+      "path_len": 8.14,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 31.080509998719208,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8334059043334883,
+      "path_len": 8.1,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 36.93815000151517,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.6376439223232392,
+      "path_len": 8.52,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 75.66971000051126,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.371473633790566,
+      "path_len": 7.79,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 97.60056999948574,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8570767958701409,
+      "path_len": 7.46,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pbs",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 96.74808999843663,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5130417590794968,
+      "path_len": 7.98,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 4.464420002477709,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.410645729175385,
+      "path_len": 7.166666666666667,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 7.377350002934691,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.9226510156709125,
+      "path_len": 8.1,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 11.780239999643527,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5290179193886279,
+      "path_len": 7.833333333333333,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 7.706579998193774,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.2665334379832018,
+      "path_len": 8.14,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 10.272039998380933,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8354856827531678,
+      "path_len": 8.12,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 13.876850000815466,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.646072967197071,
+      "path_len": 8.52,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 32.13040999689838,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.362335970088627,
+      "path_len": 7.91,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 22.78472000034526,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8635357035882564,
+      "path_len": 7.54,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "ecbs",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 30.47706000506878,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5035211746277827,
+      "path_len": 7.98,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pibt",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 3.4534199949121103,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.44800489760329,
+      "path_len": 7.7,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pibt",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 6.057190003048163,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8800333957772357,
+      "path_len": 7.9,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pibt",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 10.815420003200416,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5698923312069332,
+      "path_len": 8.033333333333333,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pibt",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 3.9284000027691945,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.241945869140968,
+      "path_len": 8.44,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pibt",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 6.682699998782482,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8366982157841123,
+      "path_len": 8.68,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pibt",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 11.046830000123009,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.6165933648431354,
+      "path_len": 9.1,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "pibt",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 5.8322600001702085,
+      "infeasible_pct": 3.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.3914682398509823,
+      "path_len": 11.958762886597938,
+      "cbs_timeout_pct": 20.0
+    },
+    {
+      "method": "pibt",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 8.742820000043139,
+      "infeasible_pct": 4.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8639535204064598,
+      "path_len": 13.6875,
+      "cbs_timeout_pct": 20.0
+    },
+    {
+      "method": "pibt",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 12.551909996545874,
+      "infeasible_pct": 1.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5072533048410468,
+      "path_len": 12.04040404040404,
+      "cbs_timeout_pct": 10.0
+    },
+    {
+      "method": "lacam",
+      "robots": 3,
+      "humans": 4,
+      "plan_ms": 3.856150002684444,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.4312217957462623,
+      "path_len": 7.466666666666667,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 3,
+      "humans": 8,
+      "plan_ms": 6.39487000007648,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8800333957772357,
+      "path_len": 7.9,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 3,
+      "humans": 15,
+      "plan_ms": 11.249609998776577,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5698923312069332,
+      "path_len": 8.033333333333333,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 5,
+      "humans": 4,
+      "plan_ms": 3.965440001047682,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.2272800814855667,
+      "path_len": 8.5,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 5,
+      "humans": 8,
+      "plan_ms": 6.814320001285523,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8561907547794934,
+      "path_len": 8.62,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 5,
+      "humans": 15,
+      "plan_ms": 11.00330000044778,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.6244126255413438,
+      "path_len": 8.88,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 10,
+      "humans": 4,
+      "plan_ms": 4.882790002739057,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 1.4229768485981558,
+      "path_len": 9.8,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 10,
+      "humans": 8,
+      "plan_ms": 16.399089999322314,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.8397740870974835,
+      "path_len": 9.15,
+      "cbs_timeout_pct": 0.0
+    },
+    {
+      "method": "lacam",
+      "robots": 10,
+      "humans": 15,
+      "plan_ms": 13.600900005258154,
+      "infeasible_pct": 0.0,
+      "collisions_total_10_trials": 0,
+      "trials_with_collision": 0,
+      "min_human_dist": 0.5131368089311162,
+      "path_len": 10.87,
+      "cbs_timeout_pct": 0.0
+    }
+  ],
+  "cbs_budget": [
+    {
+      "max_expansions": 50,
+      "time_budget_s": 0.5,
+      "fallback": "lowest_cost",
+      "n_scenarios": 30,
+      "timeout_pct": 76.66666666666667,
+      "collisions_per_trial": 3.8333333333333335,
+      "trials_with_collision_pct": 76.66666666666667,
+      "plan_ms": 252.04530333333727
+    },
+    {
+      "max_expansions": 50,
+      "time_budget_s": 0.5,
+      "fallback": "fewest_conflicts",
+      "n_scenarios": 30,
+      "timeout_pct": 76.66666666666667,
+      "collisions_per_trial": 2.3666666666666667,
+      "trials_with_collision_pct": 76.66666666666667,
+      "plan_ms": 270.88528666596784
+    },
+    {
+      "max_expansions": 150,
+      "time_budget_s": 2.0,
+      "fallback": "lowest_cost",
+      "n_scenarios": 30,
+      "timeout_pct": 56.666666666666664,
+      "collisions_per_trial": 2.933333333333333,
+      "trials_with_collision_pct": 56.666666666666664,
+      "plan_ms": 651.076203333408
+    },
+    {
+      "max_expansions": 150,
+      "time_budget_s": 2.0,
+      "fallback": "fewest_conflicts",
+      "n_scenarios": 30,
+      "timeout_pct": 56.666666666666664,
+      "collisions_per_trial": 1.6,
+      "trials_with_collision_pct": 56.666666666666664,
+      "plan_ms": 697.3760666665233
+    },
+    {
+      "max_expansions": 1000,
+      "time_budget_s": 10.0,
+      "fallback": "lowest_cost",
+      "n_scenarios": 30,
+      "timeout_pct": 53.333333333333336,
+      "collisions_per_trial": 2.6666666666666665,
+      "trials_with_collision_pct": 53.333333333333336,
+      "plan_ms": 3623.7347600016315
+    },
+    {
+      "max_expansions": 1000,
+      "time_budget_s": 10.0,
+      "fallback": "fewest_conflicts",
+      "n_scenarios": 30,
+      "timeout_pct": 53.333333333333336,
+      "collisions_per_trial": 1.0666666666666667,
+      "trials_with_collision_pct": 53.333333333333336,
+      "plan_ms": 3921.274006666499
+    }
+  ]
+}
