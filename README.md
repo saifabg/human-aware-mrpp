@@ -5,6 +5,9 @@ Reference implementation, raw data and analysis for the manuscript
 > **Human-Aware Multi-Robot Path Planning with Uncertainty-Aware Prediction of Pedestrian Motion**
 > Saif Allah M. Abgenah, Abdusalam Aldrawi and Hamza Ali Juma (submitted to *IET Cyber-Systems and Robotics*).
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24445654.svg)](https://doi.org/10.5281/zenodo.24445654)  
+Code and data: https://github.com/saifabg/human-aware-mrpp, archived on Zenodo as version 1.0.0, https://doi.org/10.5281/zenodo.24445654.
+
 The repository contains everything needed to regenerate every table and figure of the paper:
 the planner, all baselines, the simulation, the experiment scripts with fixed seeds, the raw
 per-scenario results, the statistical analysis and the analysis plan that was written before the

@@ -15,7 +15,7 @@ authors:
     given-names: Hamza Ali
     affiliation: Elmergib University
 repository-code: "https://github.com/saifabg/human-aware-mrpp"
-# doi: <add the Zenodo DOI>
+doi: "10.5281/zenodo.24445654"
 preferred-citation:
   type: article
   title: "Human-Aware Multi-Robot Path Planning with Uncertainty-Aware Prediction of Pedestrian Motion"
